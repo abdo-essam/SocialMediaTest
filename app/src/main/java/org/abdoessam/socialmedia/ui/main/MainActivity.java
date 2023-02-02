@@ -31,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setAdapter(adapter);
 
 
+
+        // this observe diff from observe rxjava
         postViewModel.postsMutableLiveData.observe(this, new Observer<List<Post>>() {
             @Override
             public void onChanged(List<Post> posts) {
